@@ -14,10 +14,11 @@ header {
 }
 
 #logo {
-  max-width: 120px;
+  max-width: 140px;
   margin-bottom: 1.5rem;
   border-radius: 50%;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  background-color: white; /* neutraler Hintergrund fürs Logo */
+  box-shadow: 0 4px 30px rgba(0,0,0,0.15);
 }
 
 header h1 {
@@ -30,6 +31,14 @@ header p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
   color: #6e6e73;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 2rem 0;
+  color: #0071e3; /* Apple Blau */
 }
 
 /* Social Section */
@@ -56,7 +65,7 @@ header p {
 }
 
 .buttons a:hover {
-  background: #0071e3; /* Apple blau */
+  background: #0071e3; /* Apple Blau Hover */
 }
 
 /* Footer */
