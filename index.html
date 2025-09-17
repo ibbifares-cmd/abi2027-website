@@ -8,50 +8,28 @@
   <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
-  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="index.html" class="active">Start</a></li>
       <li><a href="about.html">Über uns</a></li>
       <li><a href="calendar.html">Termine</a></li>
+      <li><a href="sponsoring.html">Sponsoring</a></li>
       <li><a href="gallery.html">Galerie</a></li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <!-- Hero -->
-  <header class="hero">
+  <header>
     <img src="logo.png" alt="Abi 2027 Logo" id="logo">
     <h1>Abi 2027 Sulingen</h1>
-    <p>Gemeinsam zum Ziel 🎓</p>
+    <p>Unser Weg zum Abitur 🎓</p>
   </header>
 
-  <!-- Countdown -->
-  <section class="highlight">
-    <h2>Countdown bis zum Abiball</h2>
-    <div id="countdown">Lade Countdown ...</div>
+  <section id="countdown">
+    Lade Countdown ...
   </section>
 
-  <!-- About Preview -->
-  <section class="highlight">
-    <h2>Über uns</h2>
-    <p>Wir sind der Abiturjahrgang 2027 am Gymnasium Sulingen. Unser Weg zum Abitur besteht aus Gemeinschaft, Teamwork und Erinnerungen, die bleiben.</p>
-    <p><a href="about.html">→ Mehr erfahren</a></p>
-  </section>
-
-  <!-- Galerie Vorschau -->
-  <section class="highlight gallery-preview">
-    <h2>Galerie</h2>
-    <div class="grid">
-      <img src="gallery1.jpg" alt="Bild 1">
-      <img src="gallery2.jpg" alt="Bild 2">
-      <img src="gallery3.jpg" alt="Bild 3">
-    </div>
-    <p><a href="gallery.html">→ Zur Galerie</a></p>
-  </section>
-
-  <!-- Social -->
-  <section class="highlight">
+  <section class="social">
     <h2>Folgt uns</h2>
     <div class="buttons">
       <a href="https://www.instagram.com/abi27.sulingen/" target="_blank">Instagram</a>
@@ -59,12 +37,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    © Abi 2027 Sulingen – Alle Rechte vorbehalten
+    © Abi 2027 Sulingen
   </footer>
 
-  <!-- Countdown Script -->
   <script>
     const targetDate = new Date("2027-07-03T19:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
