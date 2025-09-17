@@ -1,19 +1,40 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>Sponsoring – Abi 2027 Sulingen</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <nav>…</nav>
+<!DOCTYPE html><html lang="de"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Sponsoring – Abi 2027 Sulingen"><link rel="stylesheet" href="style.css">
+</head><body>
+<nav>
+  <ul>
+    <li><a href="index.html">Start</a></li>
+    <li><a href="about.html">Über uns</a></li>
+    <li><a href="calendar.html">Termine</a></li>
+    <li><a href="sponsoring.html">Sponsoring</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="contact.html">Kontakt</a></li>
+  </ul>
+</nav>
 
-  <main>
-    <h1>Sponsoring</h1>
-    <p>Unterstützen Sie unseren Jahrgang! Wir freuen uns über Sponsoren, die unseren Abiball und weitere Aktionen möglich machen.</p>
-    <p>Kontakt für Sponsoren: <a href="mailto:sponsoring@abi2027-sulingen.com">sponsoring@abi2027-sulingen.com</a></p>
-  </main>
+<header>
+  <img src="logo.png" alt="Abi 2027 Logo" id="logo">
+  <h1>Sponsoring</h1>
+  <p>Unterstützen Sie unseren Jahrgang.</p>
+</header>
 
-  <footer>© Abi 2027 Sulingen</footer>
-</body>
-</html>
+<main>
+  <h1>Warum sponsern?</h1>
+  <p>Ihr Beitrag hilft bei Abiball, Abizeitung und Aktionen.</p>
+  <ul>
+    <li>Sponsorenpakete ab 100 €</li>
+    <li>Logo in Abizeitung und auf Website</li>
+    <li>Social-Media-Shoutout</li>
+  </ul>
+  <p>Kontakt: <a href="mailto:sponsoring@abi2027-sulingen.com">sponsoring@abi2027-sulingen.com</a></p>
+</main>
+
+<footer>© Abi 2027 Sulingen</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>{
+  if(location.pathname.endsWith(a.getAttribute('href'))) a.classList.add('active');
+});
+</script>
+</body></html>
