@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie – Abi 2027 Sulingen</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Über uns</a></li>
+      <li><a href="calendar.html">Termine</a></li>
+      <li><a href="sponsoring.html">Sponsoring</a></li>
+      <li><a href="gallery.html" class="active">Galerie</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Galerie</h1>
+    <p>Bilder folgen bald 📸</p>
+  </header>
+
+  <main>
+    <h1>Fotos & Videos</h1>
+    <p>Hier erscheinen später Eindrücke vom Abijahr.</p>
+  </main>
+
+  <footer>© Abi 2027 Sulingen</footer>
+</body>
+</html>
