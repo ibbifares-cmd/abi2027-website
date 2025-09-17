@@ -7,15 +7,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Start</a></li>
+      <li><a href="about.html">Über uns</a></li>
+      <li><a href="calendar.html">Termine</a></li>
+      <li><a href="sponsoring.html">Sponsoring</a></li>
+      <li><a href="gallery.html">Galerie</a></li>
+      <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+  </nav>
+
   <header>
     <img src="logo.png" alt="Abi 2027 Logo" id="logo">
     <h1>Abi 2027 Sulingen</h1>
     <p>Wir zählen die Tage bis zum Abiball 🎓</p>
   </header>
 
-  <section id="countdown">
-    Lade Countdown ...
-  </section>
+  <section id="countdown">Lade Countdown ...</section>
 
   <section class="social">
     <h2>Folgt uns</h2>
@@ -30,7 +39,6 @@
   </footer>
 
   <script>
-    // Countdown bis zum Abiball (03.07.2027, 19:00 Uhr)
     const targetDate = new Date("2027-07-03T19:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
 
