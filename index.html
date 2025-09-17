@@ -5,11 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abi 2027 Sulingen</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
     <ul>
-      <li><a href="index.html">Start</a></li>
+      <li><a href="index.html" class="active">Start</a></li>
       <li><a href="about.html">Über uns</a></li>
       <li><a href="calendar.html">Termine</a></li>
       <li><a href="sponsoring.html">Sponsoring</a></li>
@@ -18,14 +20,31 @@
     </ul>
   </nav>
 
-  <header>
+  <!-- Hero / Header -->
+  <header class="hero">
     <img src="logo.png" alt="Abi 2027 Logo" id="logo">
     <h1>Abi 2027 Sulingen</h1>
-    <p>Wir zählen die Tage bis zum Abiball 🎓</p>
+    <p>Unser Weg zum Abitur 🎓</p>
   </header>
 
-  <section id="countdown">Lade Countdown ...</section>
+  <!-- Countdown -->
+  <section id="countdown-section">
+    <h2>Countdown bis zum Abiball</h2>
+    <div id="countdown">Lade Countdown ...</div>
+  </section>
 
+  <!-- Sponsoren -->
+  <section class="sponsors">
+    <h2>Unsere Sponsoren</h2>
+    <div class="sponsor-logos">
+      <img src="sponsor1.png" alt="Sponsor 1">
+      <img src="sponsor2.png" alt="Sponsor 2">
+      <img src="sponsor3.png" alt="Sponsor 3">
+    </div>
+    <p><a href="sponsoring.html">→ Mehr erfahren</a></p>
+  </section>
+
+  <!-- Social Media -->
   <section class="social">
     <h2>Folgt uns</h2>
     <div class="buttons">
@@ -34,31 +53,39 @@
     </div>
   </section>
 
+  <!-- Galerie Vorschau -->
+  <section class="gallery-preview">
+    <h2>Galerie</h2>
+    <div class="grid">
+      <img src="gallery1.jpg" alt="Bild 1">
+      <img src="gallery2.jpg" alt="Bild 2">
+      <img src="gallery3.jpg" alt="Bild 3">
+    </div>
+    <p><a href="gallery.html">→ Zur Galerie</a></p>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    © Abi 2027 Sulingen
+    © Abi 2027 Sulingen – Alle Rechte vorbehalten
   </footer>
 
   <script>
+    // Countdown Script
     const targetDate = new Date("2027-07-03T19:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
-
     function updateCountdown() {
       const now = new Date().getTime();
       const distance = targetDate - now;
-
       if (distance <= 0) {
         countdownEl.innerHTML = "🎊 Der Abiball läuft gerade!";
         return;
       }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+      const days = Math.floor(distance / (1000*60*60*24));
+      const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+      const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+      const seconds = Math.floor((distance % (1000*60))/1000);
       countdownEl.innerHTML = `${days} Tage ${hours} Std ${minutes} Min ${seconds} Sek`;
     }
-
     setInterval(updateCountdown, 1000);
   </script>
 </body>
