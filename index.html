@@ -10,46 +10,19 @@
   <header>
     <img src="logo.png" alt="Abi 2027 Logo" id="logo">
     <h1>Abi 2027 Sulingen</h1>
-    <p>Wir zählen die Tage bis zum Abiball 🎉</p>
+    <p>Gemeinsam stark – unser Weg zum Abitur</p>
   </header>
-
-  <section id="countdown">
-    Loading countdown...
-  </section>
 
   <section class="social">
     <h2>Folgt uns</h2>
-    <a href="https://www.instagram.com/abi27.sulingen/" target="_blank">Instagram</a>
-    <a href="https://www.tiktok.com/@abi27.sulingen" target="_blank">TikTok</a>
+    <div class="buttons">
+      <a href="https://www.instagram.com/abi27.sulingen/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@abi27.sulingen" target="_blank">TikTok</a>
+    </div>
   </section>
 
   <footer>
-    © Abi 2027 Sulingen – Alle Rechte vorbehalten
+    © Abi 2027 Sulingen
   </footer>
-
-  <script>
-    // Countdown bis zum Abiball (3. Juli 2027, 19:00 Uhr)
-    const targetDate = new Date("2027-07-03T19:00:00").getTime();
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      if (distance <= 0) {
-        countdownEl.innerHTML = "🎊 Der Abiball läuft gerade!";
-        return;
-      }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdownEl.innerHTML = `${days} Tage ${hours} Std ${minutes} Min ${seconds} Sek`;
-    }
-
-    setInterval(updateCountdown, 1000);
-  </script>
 </body>
 </html>
