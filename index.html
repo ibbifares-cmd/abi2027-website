@@ -14,47 +14,33 @@
       <li><a href="index.html" class="active">Start</a></li>
       <li><a href="about.html">Über uns</a></li>
       <li><a href="calendar.html">Termine</a></li>
-      <li><a href="sponsoring.html">Sponsoring</a></li>
       <li><a href="gallery.html">Galerie</a></li>
       <li><a href="contact.html">Kontakt</a></li>
     </ul>
   </nav>
 
-  <!-- Hero / Header -->
+  <!-- Hero -->
   <header class="hero">
     <img src="logo.png" alt="Abi 2027 Logo" id="logo">
     <h1>Abi 2027 Sulingen</h1>
-    <p>Unser Weg zum Abitur 🎓</p>
+    <p>Gemeinsam zum Ziel 🎓</p>
   </header>
 
   <!-- Countdown -->
-  <section id="countdown-section">
+  <section class="highlight">
     <h2>Countdown bis zum Abiball</h2>
     <div id="countdown">Lade Countdown ...</div>
   </section>
 
-  <!-- Sponsoren -->
-  <section class="sponsors">
-    <h2>Unsere Sponsoren</h2>
-    <div class="sponsor-logos">
-      <img src="sponsor1.png" alt="Sponsor 1">
-      <img src="sponsor2.png" alt="Sponsor 2">
-      <img src="sponsor3.png" alt="Sponsor 3">
-    </div>
-    <p><a href="sponsoring.html">→ Mehr erfahren</a></p>
-  </section>
-
-  <!-- Social Media -->
-  <section class="social">
-    <h2>Folgt uns</h2>
-    <div class="buttons">
-      <a href="https://www.instagram.com/abi27.sulingen/" target="_blank">Instagram</a>
-      <a href="https://www.tiktok.com/@abi27.sulingen" target="_blank">TikTok</a>
-    </div>
+  <!-- About Preview -->
+  <section class="highlight">
+    <h2>Über uns</h2>
+    <p>Wir sind der Abiturjahrgang 2027 am Gymnasium Sulingen. Unser Weg zum Abitur besteht aus Gemeinschaft, Teamwork und Erinnerungen, die bleiben.</p>
+    <p><a href="about.html">→ Mehr erfahren</a></p>
   </section>
 
   <!-- Galerie Vorschau -->
-  <section class="gallery-preview">
+  <section class="highlight gallery-preview">
     <h2>Galerie</h2>
     <div class="grid">
       <img src="gallery1.jpg" alt="Bild 1">
@@ -64,13 +50,22 @@
     <p><a href="gallery.html">→ Zur Galerie</a></p>
   </section>
 
+  <!-- Social -->
+  <section class="highlight">
+    <h2>Folgt uns</h2>
+    <div class="buttons">
+      <a href="https://www.instagram.com/abi27.sulingen/" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@abi27.sulingen" target="_blank">TikTok</a>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer>
     © Abi 2027 Sulingen – Alle Rechte vorbehalten
   </footer>
 
+  <!-- Countdown Script -->
   <script>
-    // Countdown Script
     const targetDate = new Date("2027-07-03T19:00:00").getTime();
     const countdownEl = document.getElementById("countdown");
     function updateCountdown() {
