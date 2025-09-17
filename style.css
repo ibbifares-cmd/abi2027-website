@@ -27,22 +27,32 @@ nav {
 
 nav ul {
   list-style: none;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1.5rem;
+  display: flex;              /* nebeneinander */
+  justify-content: center;    /* mittig */
+  align-items: center;
+  margin: 0;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+
+nav li {
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: #1d1d1f;
   font-weight: 500;
-  transition: color 0.2s;
+  font-size: 1rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
 nav a:hover,
 nav a.active {
-  color: #0071e3; /* Apple Blau */
+  color: #0071e3;             /* Apple Blau */
+  background-color: rgba(0,113,227,0.08);
 }
 
 /* Header */
@@ -138,43 +148,4 @@ footer {
   color: #6e6e73;
   background: #fff;
   border-top: 1px solid #e5e5e7;
-}
-
-/* Navigation */
-nav {
-  background: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;              /* nebeneinander statt untereinander */
-  justify-content: center;    /* zentriert */
-  align-items: center;
-  margin: 0;
-  padding: 1rem 0;
-  gap: 2rem;                  /* Abstand zwischen Links */
-}
-
-nav li {
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: #1d1d1f;
-  font-weight: 500;
-  font-size: 1rem;
-  padding: 0.3rem 0.6rem;
-  border-radius: 6px;
-  transition: all 0.2s ease;
-}
-
-nav a:hover,
-nav a.active {
-  color: #0071e3;             /* Apple-Blau */
-  background-color: rgba(0,113,227,0.1);
 }
